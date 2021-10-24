@@ -1,4 +1,5 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.springframework.boot.gradle.tasks.bundling.BootJar
 
 plugins {
     id("org.springframework.boot") version "2.4.5"
@@ -9,10 +10,11 @@ plugins {
 }
 
 group = "com.capstone.server"
-version = "0.0.1-SNAPSHOT"
+//version = "1.0"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -39,4 +41,12 @@ tasks.withType<KotlinCompile> {
 
 tasks.withType<Test> {
     useJUnitPlatform()
+}
+//https://docs.spring.io/spring-boot/docs/2.4.5/gradle-plugin/reference/htmlsingle/
+tasks.getByName<BootJar>("bootJar") {
+    mainClass.set("com.disso.api.ApiGatewayApplicationKt")
+    manifest {
+        attributes("Start-Class" to "com.capstone.server.CapstoneServerApplicationKt")
+    }
+   // archiveVersion.set("")
 }

@@ -1,0 +1,8 @@
+spring:
+  data:
+    mongodb:
+      host: mongo_db
+      database: capstone_db
+      username: 'capstone'
+      password: 'C@pst0n3'
+      authentication-database: admin
