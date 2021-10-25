@@ -1,4 +1,4 @@
-package com.capstone.server.parser.common
+package com.capstone.server.content.domain.model
 
 data class Article(
     val title: String,

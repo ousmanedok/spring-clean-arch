@@ -19,15 +19,14 @@ repositories {
 }
 
 dependencies {
-   // implementation("org.springframework.boot:spring-boot-starter-data-jpa")
-  //  implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
-  //  implementation("org.springframework.boot:spring-boot-starter-security")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.0")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("com.rometools:rome:1.16.0")
     implementation("org.jsoup:jsoup:1.14.1")
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+    implementation("javax.validation:validation-api:2.0.1.Final")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
    // testImplementation("org.springframework.security:spring-security-test")
 }

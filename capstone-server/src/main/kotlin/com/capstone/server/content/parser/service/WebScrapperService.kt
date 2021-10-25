@@ -1,7 +1,7 @@
-package com.capstone.server.service
+package com.capstone.server.content.parser.service
 
-import com.capstone.server.parser.common.Article
-import com.capstone.server.parser.jsoup.WebScrapper
+import com.capstone.server.content.domain.model.Article
+import com.capstone.server.content.parser.jsoup.WebScrapper
 import org.springframework.stereotype.Service
 
 interface WebScrapperService {

@@ -1,7 +1,7 @@
-package com.capstone.server.service
+package com.capstone.server.content.parser.service
 
-import com.capstone.server.parser.common.Article
-import com.capstone.server.parser.rome.FeedParser
+import com.capstone.server.content.domain.model.Article
+import com.capstone.server.content.parser.rome.FeedParser
 import org.springframework.stereotype.Service
 
 interface FeedService {

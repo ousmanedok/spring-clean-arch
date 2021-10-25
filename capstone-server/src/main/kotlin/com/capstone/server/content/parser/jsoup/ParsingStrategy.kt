@@ -1,4 +1,4 @@
-package com.capstone.server.parser.jsoup
+package com.capstone.server.content.parser.jsoup
 
 data class ParsingStrategy(
     val titleSelector: String,

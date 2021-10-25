@@ -1,8 +1,8 @@
-package com.capstone.server.controller
+package com.capstone.server.controllers
 
-import com.capstone.server.parser.common.Article
-import com.capstone.server.service.FeedService
-import com.capstone.server.service.WebScrapperService
+import com.capstone.server.content.domain.model.Article
+import com.capstone.server.content.parser.service.FeedService
+import com.capstone.server.content.parser.service.WebScrapperService
 import org.slf4j.LoggerFactory
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.GetMapping

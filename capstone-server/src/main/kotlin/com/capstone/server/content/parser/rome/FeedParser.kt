@@ -1,10 +1,7 @@
-package com.capstone.server.parser.rome
+package com.capstone.server.content.parser.rome
 
-import com.capstone.server.parser.common.Article
-import com.rometools.rome.io.FeedException
+import com.capstone.server.content.domain.model.Article
 import org.springframework.stereotype.Component
-import java.io.IOException
-import kotlin.jvm.Throws
 
 interface FeedParser {
     operator fun invoke(feedUrl: String): MutableList<Article>
