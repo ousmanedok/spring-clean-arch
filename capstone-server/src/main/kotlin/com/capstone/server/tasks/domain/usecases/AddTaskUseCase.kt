@@ -23,8 +23,8 @@ internal class AddTaskUseCaseImpl(val tasksDataRepository: TasksDataRepository) 
         } else {
             val task = tasksDataRepository.save(
                 TaskEntity(
-                    name = request.name, description =
-                    request.description,
+                    name = request.name,
+                    description = request.description,
                     active = true
                 )
             ).toTask()

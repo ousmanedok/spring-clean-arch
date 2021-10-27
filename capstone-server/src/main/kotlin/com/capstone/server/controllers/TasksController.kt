@@ -26,8 +26,16 @@ class TasksController(
         return tasksService.addTask(request)
     }
 
+    /**
+     *  Retrieves all tasks.
+     *  You can filter the tasks you want to retrieve by passing in the active flag to the url.
+     *  Example: http://localhost:8080/api/tasks/list?active=true will return all active tasks.
+     *  http://localhost:8080/api/tasks/list?active=false will return all completed tasks.
+     *  Default return all tasks both active and completed.
+     */
     @GetMapping("/list")
-    fun getAllTasks(request: TaskRequest.TaskListRequest): TaskResponse {
+    fun getAllTasks(@RequestParam(required = false) active: Boolean? = null): TaskResponse {
+        val request = TaskRequest.TaskListRequest((active))
         log.debug("fetching all tasks for {$request}")
         return tasksService.getAllTasks(request)
     }

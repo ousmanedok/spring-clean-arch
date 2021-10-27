@@ -11,9 +11,7 @@ import org.springframework.stereotype.Repository
 interface TasksDataRepository : MongoRepository<TaskEntity, ObjectId> {
     fun findByName(name: String): TaskEntity?
     fun existsByName(taskName: String): Boolean
-    fun findByActive(active: Boolean): TaskEntity?
     fun findAllByActive(active: Boolean): List<TaskEntity>
-
     /**
      * This function below is the same as the function [findAllByActive] with active=true
      */
