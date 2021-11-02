@@ -32,10 +32,16 @@ internal class TasksServiceImpl(
     }
 
     override fun updateTask(request: TaskRequest.UpdateRequest): TaskResponse {
-        TODO("Not yet implemented")
+        return when (val response = updateTaskUseCase(request)) {
+            is TaskResponse.InvalidResponse -> throw response.exception
+            else -> response
+        }
     }
 
     override fun deleteTask(request: TaskRequest.DeleteRequest): TaskResponse {
-        TODO("Not yet implemented")
+        return when (val response = deleteTaskUseCase(request)) {
+            is TaskResponse.InvalidResponse -> throw response.exception
+            else -> response
+        }
     }
 }

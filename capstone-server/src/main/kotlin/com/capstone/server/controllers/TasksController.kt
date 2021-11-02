@@ -40,26 +40,27 @@ class TasksController(
         return tasksService.getAllTasks(request)
     }
 
-    @PostMapping("/update")
+    /**
+     * Updates a task description and active.
+     * To update the task you can pass the update request json body to the endpoint.
+     * Endpoint: http://localhost:8080/api/tasks/update
+     */
+    @PutMapping("/update")
     @ResponseStatus(HttpStatus.OK)
     fun updateTask(@Valid @RequestBody request: TaskRequest.UpdateRequest): TaskResponse {
-        /**
-         * Cette function est pour le edit d'une tache. Le Nom de la tache ne change pas, mais seulement utiliser pour
-         * obtenir l'object qui est deja dans la base de donner.
-         * Ce servir de l'exemple de addTask pour implementer cette funtion.
-         */
-        TODO()
+        log.debug("update task = {$request}")
+        return tasksService.updateTask(request)
     }
 
-    @DeleteMapping("name")
+    /**
+     * Deletes a task.
+     * Use endpoint: http://localhost:8080/api/tasks/name for localhost test.
+     * pass in the name of the task to be deleted.
+     */
+    @DeleteMapping("/name")
     @ResponseStatus(HttpStatus.OK)
     fun deleteTask(@Valid @RequestBody request: TaskRequest.DeleteRequest): TaskResponse {
-        /**
-         * Cette function est pour le delete d'une tache. Le Nom de la tache ne change pas, mais seulement utiliser pour
-         * obtenir l'object qui est deja dans la base de donner.
-         * Ce servir de l'exemple de addTask pour implementer cette function.
-         * Un point cle ici est de ce rendre compte de la method de la function @DeleteMapping
-         */
-        TODO()
+        log.debug("delete task = {$request}")
+        return tasksService.deleteTask(request)
     }
 }

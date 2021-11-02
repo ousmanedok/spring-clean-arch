@@ -6,3 +6,11 @@ spring:
       username: 'capstone'
       password: 'C@pst0n3'
       authentication-database: admin
+
+logging:
+  level:
+    com.capstone.server: DEBUG
+    org:
+      springframework: INFO
+      hibernate:
+        SQL: DEBUG'
