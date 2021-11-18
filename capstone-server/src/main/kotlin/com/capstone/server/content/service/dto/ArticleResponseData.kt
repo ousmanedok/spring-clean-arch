@@ -1,4 +1,4 @@
-package com.capstone.server.content.domain.dto
+package com.capstone.server.content.service.dto
 
 import com.capstone.server.content.models.Article
 

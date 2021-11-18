@@ -1,7 +1,4 @@
-package com.capstone.server.content.domain.dto
-
-import java.time.LocalDateTime
-
+package com.capstone.server.content.service.dto
 
 sealed class ArticleRequest {
 
@@ -9,9 +6,12 @@ sealed class ArticleRequest {
             val title: String,
             val url: String,
             val content: String,
-            var publishedDate : Long,
+            val publishedDate : Long,
             val imageUrl : String,
             val author : String
             ): ArticleRequest()
+
+    data class GetAllArticlesRequest(val limit: Int = 10 ): ArticleRequest()
+
 
 }
