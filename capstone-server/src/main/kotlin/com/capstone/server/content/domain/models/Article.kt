@@ -1,4 +1,4 @@
-package com.capstone.server.content.models
+package com.capstone.server.content.domain.models
 
 import java.time.LocalDateTime
 

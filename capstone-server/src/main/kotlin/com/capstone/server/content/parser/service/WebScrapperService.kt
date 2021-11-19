@@ -1,6 +1,6 @@
 package com.capstone.server.content.parser.service
 
-import com.capstone.server.content.domain.model.Article
+import com.capstone.server.content.domain.models.Article
 import com.capstone.server.content.parser.jsoup.WebScrapper
 import org.springframework.stereotype.Service
 

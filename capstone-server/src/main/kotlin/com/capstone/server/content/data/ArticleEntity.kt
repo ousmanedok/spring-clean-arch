@@ -1,6 +1,6 @@
 package com.capstone.server.content.data
 
-import com.capstone.server.content.models.Article
+import com.capstone.server.content.domain.models.Article
 import org.bson.types.ObjectId
 import org.springframework.data.annotation.Id
 import org.springframework.data.mongodb.core.mapping.Document

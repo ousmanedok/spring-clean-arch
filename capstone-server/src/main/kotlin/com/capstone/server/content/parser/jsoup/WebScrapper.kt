@@ -1,6 +1,6 @@
 package com.capstone.server.content.parser.jsoup
 
-import com.capstone.server.content.domain.model.Article
+import com.capstone.server.content.domain.models.Article
 import org.springframework.stereotype.Component
 
 interface WebScrapper {

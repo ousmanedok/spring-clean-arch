@@ -1,6 +1,6 @@
 package com.capstone.server.content.service.dto
 
-import com.capstone.server.content.models.Article
+import com.capstone.server.content.domain.models.Article
 
 data class ArticleResponseData (
     val title: String,

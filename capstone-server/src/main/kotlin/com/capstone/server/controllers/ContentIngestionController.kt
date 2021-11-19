@@ -1,6 +1,6 @@
 package com.capstone.server.controllers
 
-import com.capstone.server.content.domain.model.Article
+import com.capstone.server.content.domain.models.Article
 import com.capstone.server.content.parser.service.FeedService
 import com.capstone.server.content.parser.service.WebScrapperService
 import org.slf4j.LoggerFactory
