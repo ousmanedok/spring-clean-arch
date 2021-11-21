@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository
 interface ArticlesDataRepository: MongoRepository<ArticleEntity,ObjectId> {
 
     fun existsByTitle(title: String): Boolean
+    fun findByTitle(title: String): ArticleEntity
 }
