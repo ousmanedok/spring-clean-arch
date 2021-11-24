@@ -6,5 +6,7 @@ sealed class ArticleResponse {
 
     data class ArticleListResponse(val data: List<ArticleResponseData>): ArticleResponse()
 
+    object DeleteArticleResponse: ArticleResponse()
+
     data class InvalidResponse(val exception: Exception): ArticleResponse()
 }

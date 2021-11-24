@@ -22,5 +22,7 @@ sealed class ArticleRequest {
             val author : String?
     ): ArticleRequest()
 
+    data class DeleteArticleRequestByTitle(val title: String): ArticleRequest()
+
 
 }
