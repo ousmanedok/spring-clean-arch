@@ -21,4 +21,11 @@ class ArticlesController(
         log.debug("adding a new article {$request}")
         return articlesService.addArticle(request)
     }
+
+    @GetMapping("/list")
+    fun getArticles(@RequestParam(required = false) limit: Int): ArticleResponse{
+        val request = ArticleRequest.GetAllArticlesRequest((limit))
+        log.debug("Fetching 10 articles for {$request}")
+        return articlesService.getAllArticles(request)
+    }
 }
