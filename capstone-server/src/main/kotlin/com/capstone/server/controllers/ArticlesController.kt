@@ -3,6 +3,8 @@ package com.capstone.server.controllers
 import com.capstone.server.content.service.ArticlesService
 import com.capstone.server.content.service.dto.ArticleRequest
 import com.capstone.server.content.service.dto.ArticleResponse
+import com.capstone.server.tasks.service.dto.TaskRequest
+import com.capstone.server.tasks.service.dto.TaskResponse
 import org.slf4j.LoggerFactory
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
@@ -25,7 +27,16 @@ class ArticlesController(
     @GetMapping("/list")
     fun getArticles(@RequestParam(required = false) limit: Int): ArticleResponse{
         val request = ArticleRequest.GetAllArticlesRequest((limit))
-        log.debug("Fetching 10 articles for {$request}")
+        log.debug("Fetching articles for {$request}")
         return articlesService.getAllArticles(request)
+    }
+
+    //Endpoint pour supprimer un article par titre: http://localhost:8080/api/tasks/title
+
+    @DeleteMapping("/title")
+    @ResponseStatus(HttpStatus.OK)
+    fun deleteArticle(@Valid @RequestBody request: ArticleRequest.DeleteArticleRequestByTitle): ArticleResponse {
+        log.debug("delete article = {$request}")
+        return articlesService.deleteArticle(request)
     }
 }
