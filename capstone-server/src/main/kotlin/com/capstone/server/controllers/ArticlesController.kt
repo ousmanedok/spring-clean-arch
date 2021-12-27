@@ -10,12 +10,19 @@ import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 import javax.validation.Valid
 
+/**
+ * Pour tester l'application sur ta machine tu peux simplement utiliser ce lien:
+ * http://localhost:8080/api/articles/list pour voir toutes les articles actuellement presentes dans la base de donneés.
+ */
+
 @RestController
 @RequestMapping("/api/articles")
 class ArticlesController(
         val articlesService : ArticlesService
 ) {
     private val log = LoggerFactory.getLogger(ArticlesController::class.java)
+
+     //Endpoint pour ajouter un article: http://localhost:8080/api/articles/add
 
     @PostMapping("/add")
     @ResponseStatus(HttpStatus.CREATED)
@@ -24,6 +31,8 @@ class ArticlesController(
         return articlesService.addArticle(request)
     }
 
+    //Endpoint pour la liste des articles: http://localhost:8080/api/articles/list
+
     @GetMapping("/list")
     fun getArticles(@RequestParam(required = false) limit: Int): ArticleResponse{
         val request = ArticleRequest.GetAllArticlesRequest((limit))
@@ -31,7 +40,17 @@ class ArticlesController(
         return articlesService.getAllArticles(request)
     }
 
-    //Endpoint pour supprimer un article par titre: http://localhost:8080/api/tasks/title
+
+     //Endpoint pour mettre à jour un article: http://localhost:8080/api/articles/update
+
+    @PutMapping("/update")
+    @ResponseStatus(HttpStatus.OK)
+    fun updateArticle(@Valid @RequestBody request: ArticleRequest.UpdateArticleRequest): ArticleResponse {
+        log.debug("update article = {$request}")
+        return articlesService.updateArticle(request)
+    }
+
+    //Endpoint pour supprimer un article par titre: http://localhost:8080/api/articles/title
 
     @DeleteMapping("/title")
     @ResponseStatus(HttpStatus.OK)
