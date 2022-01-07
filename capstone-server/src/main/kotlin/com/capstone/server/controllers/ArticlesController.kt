@@ -3,8 +3,6 @@ package com.capstone.server.controllers
 import com.capstone.server.content.service.ArticlesService
 import com.capstone.server.content.service.dto.ArticleRequest
 import com.capstone.server.content.service.dto.ArticleResponse
-import com.capstone.server.tasks.service.dto.TaskRequest
-import com.capstone.server.tasks.service.dto.TaskResponse
 import org.slf4j.LoggerFactory
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
@@ -34,14 +32,14 @@ class ArticlesController(
     //Endpoint pour la liste des articles: http://localhost:8080/api/articles/list
 
     @GetMapping("/list")
-    fun getArticles(@RequestParam(required = false) limit: Int): ArticleResponse{
-        val request = ArticleRequest.GetAllArticlesRequest((limit))
+    fun getArticles(@RequestParam(required = false) limit: Int? ): ArticleResponse{
+        val request =  ArticleRequest.GetAllArticlesRequest((limit))
         log.debug("Fetching articles for {$request}")
         return articlesService.getAllArticles(request)
     }
 
 
-     //Endpoint pour mettre à jour un article: http://localhost:8080/api/articles/update
+    //Endpoint pour mettre à jour un article: http://localhost:8080/api/articles/update
 
     @PutMapping("/update")
     @ResponseStatus(HttpStatus.OK)

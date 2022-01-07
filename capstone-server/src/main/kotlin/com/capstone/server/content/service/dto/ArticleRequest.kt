@@ -11,7 +11,7 @@ sealed class ArticleRequest {
             val author : String
             ): ArticleRequest()
 
-    data class GetAllArticlesRequest(val limit: Int = 10 ): ArticleRequest()
+    data class GetAllArticlesRequest(val limit: Int? ): ArticleRequest()
 
     data class UpdateArticleRequest(
             val title: String,

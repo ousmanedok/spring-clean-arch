@@ -10,6 +10,8 @@ import org.springframework.data.domain.PageRequest
 import org.springframework.data.domain.Sort
 import org.springframework.stereotype.Component
 
+const val  DEFAULT_LIMIT = 10
+
 interface GetAllArticlesUseCase {
     operator fun invoke(request: ArticleRequest.GetAllArticlesRequest): ArticleResponse
 }
@@ -17,7 +19,8 @@ interface GetAllArticlesUseCase {
 @Component("getAllArticlesUseCase")
 internal class GetAllArticlesUseCaseImpl(val articlesDataRepository: ArticlesDataRepository): GetAllArticlesUseCase{
     override fun invoke(request: ArticleRequest.GetAllArticlesRequest): ArticleResponse {
-        val result: List<ArticleEntity> = articlesDataRepository.findAll(PageRequest.of(0,request.limit, Sort.by("publishedDate").descending())).toList()
+        val limit = request.limit ?: DEFAULT_LIMIT
+        val result: List<ArticleEntity> = articlesDataRepository.findAll(PageRequest.of(0,limit, Sort.by("publishedDate").descending())).toList()
         return ArticleResponse.ArticleListResponse(
                 data = result.map { ArticleEntity ->
                     ArticleEntity.toArticle().toArticleResponseData()
