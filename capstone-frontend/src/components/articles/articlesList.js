@@ -4,17 +4,14 @@ import React, {  useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 const ArticleList =() =>{
-
     const articles = useSelector(state => state?.article?.articles);
     const dispatch = useDispatch();
-
     useEffect(() => {
         dispatch(retrieveArticles());
 
       }, []);
     return(
         <div>
-            
             {
                 articles?.map((article , index) => (
                     <ArticleElement 
@@ -27,11 +24,8 @@ const ArticleList =() =>{
                         publishedDate = {article.publishedDate}
                     />
                 ))
-            }
-            
-        </div>
-        
+            }   
+        </div>    
     );
 }
-
 export default ArticleList;

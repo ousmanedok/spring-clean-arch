@@ -1,12 +1,12 @@
 import http from "../http-common";
 
 
-  const getAll = limit => {
+  const getArticles = limit => {
     return http.get(`/api/articles/list?limit=${limit}`);
   }
 
-  const ArticleDataService = {
-    getAll
+  const ArticleService = {
+    getArticles
   };
 
-export default  ArticleDataService;
+export default  ArticleService;

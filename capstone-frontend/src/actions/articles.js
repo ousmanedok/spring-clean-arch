@@ -1,28 +1,17 @@
 import {RETRIEVE_ARTICLES}  from "./types";
   
-  import ArticleDataService from "../services/article.service";
+  import ArticleService from "../services/article.service";
   
   export const retrieveArticles = () => async (dispatch) => {
     try {
       const limit = 10;
-      const res = await ArticleDataService.getAll(limit);
+      const res = await ArticleService.getArticles(limit);
       dispatch({
         type: RETRIEVE_ARTICLES,
         payload: res.data.data,
       });
 
-      console.log(res.data)
-
     } catch (err) {
       console.log(err);
     }
   };
-
-  
-  
-  
-  
-  
- 
-  
- 
