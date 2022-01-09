@@ -32,3 +32,23 @@ code {
 .infoPlus{
   color: gray;
 }
+.blocError{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.errorImage{
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+.errorImage img{
+  width: 100%;
+  height: 100%;
+}
+
+.blocError p {
+  text-align: center;
+}

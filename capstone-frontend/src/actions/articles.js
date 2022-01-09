@@ -1,4 +1,4 @@
-import {RETRIEVE_ARTICLES}  from "./types";
+import {RETRIEVE_ARTICLES , API_ERROR}  from "./types";
   
   import ArticleService from "../services/article.service";
   
@@ -12,6 +12,10 @@ import {RETRIEVE_ARTICLES}  from "./types";
       });
 
     } catch (err) {
-      console.log(err);
+      const messageError = "votre application n'est pas connecté au serveur ";
+      dispatch({
+        type: API_ERROR,
+        payload: messageError
+      });
     }
   };
