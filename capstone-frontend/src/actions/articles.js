@@ -10,9 +10,8 @@ import {RETRIEVE_ARTICLES , API_ERROR}  from "./types";
         type: RETRIEVE_ARTICLES,
         payload: res.data.data,
       });
-
     } catch (err) {
-      const messageError = "votre application n'est pas connecté au serveur ";
+      const messageError = `Une erreur est survenue lors de la récupération des articles : ${err?.message}`;
       dispatch({
         type: API_ERROR,
         payload: messageError

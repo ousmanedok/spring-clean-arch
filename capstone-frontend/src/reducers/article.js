@@ -1,6 +1,5 @@
 import {
   RETRIEVE_ARTICLES,
-  API_ERROR
   } from "../actions/types";
 
   const initialState = {articles:[]};
@@ -12,8 +11,6 @@ import {
 
       case RETRIEVE_ARTICLES:
         return {...state, articles:payload};
-      case API_ERROR:
-        return {...state, messageError:payload}
       default:
         return state;
     }
