@@ -5,14 +5,14 @@ import ApiError from './components/apiError';
 import {useSelector} from "react-redux";
 
 function App() {
-  const messageError = useSelector(state => state?.apiError?.messageError);
+  const message = useSelector(state => state?.apiError?.message);
   return (
     <div className="App">
       <Header/>
       <div className="container">
           <div className="row mt-5 ">
               <div className="col col-md-12 ">
-                <ApiError messageError={messageError}/>
+                <ApiError message={message}/>
                 <ArticleList/>
               </div>  
               

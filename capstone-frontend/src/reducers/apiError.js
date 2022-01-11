@@ -4,7 +4,7 @@ function apiErrorReducer(state = null ,action){
     const { type , payload } = action;
     switch(type){
         case API_ERROR :
-            return {...state , messageError:payload}
+            return {...state , message:payload}
         default :
             return state;    
     }

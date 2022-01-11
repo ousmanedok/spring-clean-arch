@@ -11,10 +11,10 @@ import {RETRIEVE_ARTICLES , API_ERROR}  from "./types";
         payload: res.data.data,
       });
     } catch (err) {
-      const messageError = `Une erreur est survenue lors de la récupération des articles : ${err?.message}`;
+      const message = `Une erreur est survenue lors de la récupération des articles : ${err?.message}`;
       dispatch({
         type: API_ERROR,
-        payload: messageError
+        payload: message
       });
     }
   };

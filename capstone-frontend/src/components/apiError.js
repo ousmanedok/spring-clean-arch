@@ -3,12 +3,12 @@ const ApiError = (props) =>{
     return(
         <div>
             {
-                props.messageError && (
+                props.message && (
                     <div className="blocError">
                         <div className="errorImage">
                             <img src={errorImage} alt=""/>
                         </div>
-                        <p>{props.messageError}</p>      
+                        <p>{props.message}</p>      
                     </div>
                 )
             }
