@@ -2,9 +2,9 @@ import {RETRIEVE_ARTICLES , API_ERROR}  from "./types";
   
   import ArticleService from "../services/article.service";
   
-  export const retrieveArticles = () => async (dispatch) => {
+  export const retrieveArticles = (limit=10) => async (dispatch) => {
     try {
-      const res = await ArticleService.getArticles(10);
+      const res = await ArticleService.getArticles(limit);
       dispatch({
         type: RETRIEVE_ARTICLES,
         payload: res.data.data,
