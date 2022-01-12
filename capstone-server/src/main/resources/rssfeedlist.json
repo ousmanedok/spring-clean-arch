@@ -1,0 +1,359 @@
+[
+  {
+    "siteName": "Guinée News",
+    "links": {
+      "siteLink": "https://guineenews.org/",
+      "rssFeedLink": "https://guineenews.org/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "Mosaique Guinée",
+    "links": {
+      "siteLink": "https://mosaiqueguinee.com/",
+      "rssFeedLink": "https://mosaiqueguinee.com/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "Media Guinée",
+    "links": {
+      "siteLink": "https://mediaguinee.org/",
+      "rssFeedLink": "https://mediaguinee.org/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "Le monde",
+    "links": {
+      "siteLink": "https://www.lemonde.fr/guinee/",
+      "rssFeedLink": "https://www.lemonde.fr/guinee/rss_full.xml"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "Guinée Matin",
+    "links": {
+      "siteLink": "https://guineematin.com/",
+      "rssFeedLink": "https://guineematin.com/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "Vision Guinée ",
+    "links": {
+      "siteLink": "https://www.visionguinee.info/",
+      "rssFeedLink": "https://www.visionguinee.info/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "Africa Guinée",
+    "links": {
+      "siteLink": "https://africaguinee.com/",
+      "rssFeedLink": "https://www.africaguinee.com/rss.xml"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "Ministère de l'agriculture et de l'élevage",
+    "links": {
+      "siteLink": "https://www.agriculture.gov.gn/",
+      "rssFeedLink": " https://www.agriculture.gov.gn/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "AFD",
+    "links": {
+      "siteLink": "https://www.afd.fr/fr",
+      "rssFeedLink": "https://www.afd.fr/fr/rss.xml"
+    },
+    "lang": [
+      "fr",
+      "en",
+      "es",
+      "pt"
+    ]
+  },
+  {
+    "siteName": "Ministère du Budget",
+    "links": {
+      "siteLink": "https://mbudget.gov.gn/",
+      "rssFeedLink": "https://mbudget.gov.gn/feed/"
+    },
+    "lang": [
+      "fr",
+      "en"
+    ]
+  },
+  {
+    "siteName": "BAD",
+    "links": {
+      "siteLink": "https://www.afdb.org/",
+      "rssFeedLink": "https://www.afdb.org/en/rss-feeds"
+    },
+    "lang": [
+      "fr",
+      "en",
+      "pt"
+    ]
+  },
+  {
+    "siteName": "BCRG",
+    "links": {
+      "siteLink": "https://www.bcrg-guinee.org/",
+      "rssFeedLink": "https://www.bcrg-guinee.org/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "MINISTERE DES POSTES, DES TELECOMMUNICATIONS ET DE L'ECONOMIE NUMERIQUE",
+    "links": {
+      "siteLink": "https://mpten.gov.gn/",
+      "rssFeedLink": "https://mpten.gov.gn/feed/"
+    },
+    "lang": [
+      "fr",
+      "en",
+      "ar",
+      "ch"
+    ]
+  },
+  {
+    "siteName": "Guilab",
+    "links": {
+      "siteLink": "https://guilab.com.gn/",
+      "rssFeedLink": "https://guilab.com.gn/feed/"
+    },
+    "lang": [
+      "fr",
+      "en"
+    ]
+  },
+  {
+    "siteName": "ARPT",
+    "links": {
+      "siteLink": "https://www.arpt.gov.gn/",
+      "rssFeedLink": "https://www.arpt.gov.gn/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "Post",
+    "links": {
+      "siteLink": "http://www.laposteguineenne.post/",
+      "rssFeedLink": "http://www.laposteguineenne.post/feed/"
+    },
+    "lang": [
+      "fr",
+      "en"
+    ]
+  },
+  {
+    "siteName": "TIC-telecom",
+    "links": {
+      "siteLink": "www.tic-guinee.net",
+      "rssFeedLink": "https://tic-guinee.net/feed/"
+    },
+    "lang": [
+      "fr",
+      "en",
+      "ar"
+    ]
+  },
+  {
+    "siteName": "Le matin guinée",
+    "links": {
+      "siteLink": "http://www.lematinguinee.com/",
+      "rssFeedLink": ""
+    },
+    "lang": [
+      "fr",
+      "en"
+    ]
+  },
+  {
+    "siteName": "Ministère des mines et de la Géologie",
+    "links": {
+      "siteLink": "https://mines.gov.gn/",
+      "rssFeedLink": "https://mines.gov.gn/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "Jeune Afrique",
+    "links": {
+      "siteLink": "https://www.jeuneafrique.com/",
+      "rssFeedLink": "https://www.jeuneafrique.com/pays/guinee/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "SMB",
+    "links": {
+      "siteLink": "http://www.smb-guinee.com/",
+      "rssFeedLink": "http://www.smb-guinee.com/en/feed/"
+    },
+    "lang": [
+      "fr",
+      "en"
+    ]
+  },
+  {
+    "siteName": "Alcoa",
+    "links": {
+      "siteLink": "https://www.alcoa.com/guinea/",
+      "rssFeedLink": "https://news.alcoa.com/rss/pressrelease.aspx"
+    },
+    "lang": [
+      "fr",
+      "en"
+    ]
+  },
+  {
+    "siteName": "Mining Technologie",
+    "links": {
+      "siteLink": "https://www.mining-technology.com/projects/simandou-iron-ore-project-guinea/",
+      "rssFeedLink": "https://www.mining-technology.com/feed/"
+    },
+    "lang": [
+      "en"
+    ]
+  },
+  {
+    "siteName": "GAC",
+    "links": {
+      "siteLink": "https://gacguinee.com/",
+      "rssFeedLink": "https://gacguinee.com/lang/fr/feed/"
+    },
+    "lang": [
+      "fr",
+      "en"
+    ]
+  },
+  {
+    "siteName": "Soguipami",
+    "links": {
+      "siteLink": "https://soguipami.net/",
+      "rssFeedLink": "https://soguipami.net/feed/"
+    },
+    "lang": [
+      "fr",
+      "en",
+      "ar",
+      "es",
+      "ch"
+    ]
+  },
+  {
+    "siteName": "SBG (SOCIETE DES BAUXITES DE GUINEE)",
+    "links": {
+      "siteLink": "http://www.metalcorpgroup.com/",
+      "rssFeedLink": "https://metalcorpgroup.com/feed/"
+    },
+    "lang": [
+      "en"
+    ]
+  },
+  {
+    "siteName": "SOMIAG (SOCIETE DE MINAGE ET D'AGREGATS DE GUINEE)",
+    "links": {
+      "siteLink": "http://www.audemard.com/",
+      "rssFeedLink": "http://www.audemard.com/feed/"
+    },
+    "lang": [
+      "fr",
+      "en"
+    ]
+  },
+  {
+    "siteName": "EDG",
+    "links": {
+      "siteLink": "https://edg.com.gn/",
+      "rssFeedLink": "https://edg.com.gn/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "OMVG",
+    "links": {
+      "siteLink": "https://www.pe-omvg.org/",
+      "rssFeedLink": "https://www.pe-omvg.org/rss.xml"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "Institut Nationale de la Statistique",
+    "links": {
+      "siteLink": "https://www.stat-guinee.org/",
+      "rssFeedLink": "https://www.stat-guinee.org/index.php?format=feed&type=rss"
+    },
+    "lang": [
+      "fr",
+      "en"
+    ]
+  },
+  {
+    "siteName": "Ministère de la pêche et de l'aquaculture",
+    "links": {
+      "siteLink": "https://www.peches.gov.gn/",
+      "rssFeedLink": "https://www.peches.gov.gn/index.php?format=feed&type=rss"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "PARLEMENT AFRICAIN DE LA SOCIETE CIVILE",
+    "links": {
+      "siteLink": "https://parlementafricain-osc.org/",
+      "rssFeedLink": "https://parlementafricain-osc.org/feed/"
+    },
+    "lang": [
+      "fr"
+    ]
+  },
+  {
+    "siteName": "CICR (COMITE INTERNATIONAL DE LA CROIX ROUGE)",
+    "links": {
+      "siteLink": "https://www.icrc.org/",
+      "rssFeedLink": "https://www.icrc.org/fr/rss/general"
+    },
+    "lang": [
+      "fr",
+      "en",
+      "es",
+      "pt",
+      "ar"
+    ]
+  }
+]
