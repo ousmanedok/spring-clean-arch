@@ -1,20 +1,28 @@
-export default function ArticleElement(){
+import Moment from "react-moment";
+const ArticleElement = (props) =>{
+    const date = props.publishedDate;
     return(
         <div className="d-flex flex-row w3-hover-opacity mb-4 new ">
                 <div className="col col-md-3 col-sm-12 col-xs-12 ">
-                    <img className="newImage"  src='https://guineenews.org/wp-content/uploads/2021/10/247639421_587139499374891_8761184434803523300_n-720x430.jpg'/>              
+                    <img className="articleImage"  src={props.imageUrl}/>              
                 </div>
                 <div className="col col-md-9 p-2 col-sm-12 col-xs-12 ">
-                    <a className="titre" href="#"><h1>New  1</h1></a>
-                    <p className="infoPlus">,fnrjjirnj.com<span style = {{ marginLeft : 20 }}>2021</span></p>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo  
-                    <span>  <a href="#">voir plus ...</a></span>
+                    <a className="titre" href={props?.url}><h2>{props.title}</h2></a>
+                    <p className="infoPlus">
+                            <Moment format="ddd D MMM YYYY HH:mm">
+                                {date}
+                            </Moment>
                     </p>
-                    <p className="infoPlus">Amina chérif</p>
+                    <p>
+                        {props.content} 
+                    <span>  <a href={props.url}>voir plus ...</a></span>
+                    </p>
+                    <p className="infoPlus">{props.author}</p>
                 </div>          
             </div>
     );
 }
+
+
+
+export default ArticleElement;
