@@ -28,7 +28,8 @@ internal class AddArticleUseCaseImpl(val articleDataRepository : ArticlesDataRep
                             content = request.content,
                             publishedDate = request.publishedDate,
                             imageUrl = request.imageUrl,
-                            author = request.author
+                            author = request.author,
+                            siteName = request.siteName
                     )
             ).toArticle()
             log.debug("Article added: $article")

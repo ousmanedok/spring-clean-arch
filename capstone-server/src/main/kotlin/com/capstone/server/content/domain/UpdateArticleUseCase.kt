@@ -34,7 +34,9 @@ internal class UpdateArticleUseCaseImpl(val articlesDataRepository: ArticlesData
                             imageUrl = if (!request.imageUrl.isNullOrBlank()) request.imageUrl
                             else articleEntity.imageUrl,
                             author = if (!request.author.isNullOrBlank()) request.author
-                            else articleEntity.author
+                            else articleEntity.author,
+                            siteName = if (!request.siteName.isNullOrBlank()) request.siteName
+                            else articleEntity.siteName
                             )
 
 
