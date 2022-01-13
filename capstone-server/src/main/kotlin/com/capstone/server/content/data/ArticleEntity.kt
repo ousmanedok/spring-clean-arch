@@ -15,6 +15,7 @@ data class ArticleEntity(
     internal val publishedDate: Long,
     internal val imageUrl : String,
     internal val author : String,
+    internal val siteName: String
 
 )
 
@@ -24,7 +25,8 @@ fun Article.toArticleEntity() = ArticleEntity(
     content = this.content,
     publishedDate = this.publishedDate,
     imageUrl = this.imageUrl,
-    author = this.author
+    author = this.author,
+    siteName = this.siteName
 )
 fun ArticleEntity.toArticle() = Article(
         title = this.title,
@@ -32,5 +34,6 @@ fun ArticleEntity.toArticle() = Article(
         content = this.content,
         publishedDate = this.publishedDate,
         imageUrl = this.imageUrl,
-        author = this.author
+        author = this.author,
+        siteName = this.siteName
 )

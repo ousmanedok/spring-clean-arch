@@ -8,13 +8,16 @@ data class ArticleResponseData (
     val content: String,
     val publishedDate: Long,
     val imageUrl: String,
-    val author: String
+    val author: String,
+    val siteName: String
         )
 fun Article.toArticleResponseData()= ArticleResponseData(
     title = this.title,
     url = this.url,
     content = this.content,
-   publishedDate = this.publishedDate,
+    publishedDate = this.publishedDate,
     imageUrl= this.imageUrl,
-    author = this.author
+    author = this.author,
+    siteName = this.siteName
+
 )

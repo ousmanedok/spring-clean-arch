@@ -8,7 +8,8 @@ sealed class ArticleRequest {
             val content: String,
             val publishedDate : Long,
             val imageUrl : String,
-            val author : String
+            val author : String,
+            val siteName : String
             ): ArticleRequest()
 
     data class GetAllArticlesRequest(val limit: Int? ): ArticleRequest()
@@ -19,7 +20,8 @@ sealed class ArticleRequest {
             val content: String?,
             val publishedDate : Long?,
             val imageUrl : String?,
-            val author : String?
+            val author : String?,
+            val siteName: String?
     ): ArticleRequest()
 
     data class DeleteArticleRequestByTitle(val title: String): ArticleRequest()
