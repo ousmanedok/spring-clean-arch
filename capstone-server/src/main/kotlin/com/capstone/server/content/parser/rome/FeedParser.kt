@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component
 
 interface FeedParser {
     operator fun invoke(feedUrl: String): MutableList<Article>
+    operator fun invoke (feedItems: List<RssFeedItem>):MutableList<Article>
 }
 
 @Component("feedParser")
@@ -14,5 +15,10 @@ internal class FeedParserImpl() : FeedParser {
     override fun invoke(feedUrl: String): MutableList<Article> {
         TODO("Not yet implemented")
     }
+
+    override fun invoke(feedItems: List<RssFeedItem>): MutableList<Article> {
+        TODO("Not yet implemented")
+    }
+
 
 }
