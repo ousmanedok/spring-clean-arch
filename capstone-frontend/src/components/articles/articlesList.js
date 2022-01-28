@@ -14,13 +14,14 @@ const ArticleList =() =>{
                     {
                             articles?.map((article , index) => (
                                 <ArticleElement 
-                                    key = {index}    
+                                    key = {article.id}    
                                     title = {article.title}
                                     url = {article.url}
                                     content = {article.content}
                                     imageUrl = {article.imageUrl}
                                     author = {article.author}
                                     publishedDate = {article.publishedDate}
+                                    siteName = {article.siteName}
                                 />
                             ))    
                     }    

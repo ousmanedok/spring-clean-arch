@@ -9,9 +9,13 @@ const ArticleElement = (props) =>{
                 <div className="col col-md-9 p-2 col-sm-12 col-xs-12 ">
                     <a className="titre" href={props?.url}><h2>{props.title}</h2></a>
                     <p className="infoPlus">
-                            <Moment format="ddd D MMM YYYY HH:mm">
-                                {date}
-                            </Moment>
+                            {props.siteName}
+                            <span style = {{ marginLeft:20 }}>
+                                <Moment format="ddd D MMM YYYY HH:mm">
+                                    {date}
+                                </Moment>
+                            </span>
+                            
                     </p>
                     <p>
                         {props.content} 
