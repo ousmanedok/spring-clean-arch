@@ -13,7 +13,7 @@ data class ArticleEntity(
     internal val url : String,
     internal  val content : String,
     internal val publishedDate: Long,
-    internal val imageUrl : String,
+    internal val imageUrl : String? = null,
     internal val author : String,
     internal val siteName: String
 
