@@ -17,17 +17,12 @@ import org.springframework.web.bind.annotation.RestController
 @RestController
 @RequestMapping("/api/ingest")
 class ContentIngestionController(
-    val feedService: FeedService,
     val webScrapperService: WebScrapperService
 ) {
     private val log = LoggerFactory.getLogger(ContentIngestionController::class.java)
 
     @GetMapping("/feed", produces = [MediaType.APPLICATION_JSON_VALUE])
     fun ingestFeedContent(): List<Article> {
-        /**
-         * Cette function est pour le rss et donc tu utilizes le lien de rss the guineenews
-         * comme parametre lorsque tu utilize feedService.invoke(...)
-         */
         TODO()
     }
 

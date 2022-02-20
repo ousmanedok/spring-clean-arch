@@ -8,10 +8,10 @@ import org.springframework.data.mongodb.core.mapping.Document
 @Document(collection = "articles")
 data class ArticleEntity(
     @Id
-    var id : ObjectId? = null,
-    internal  val title : String,
-    internal val url : String,
-    internal  val content : String,
+    var id: ObjectId? = null,
+    internal val title: String,
+    internal val url: String,
+    internal val content: String,
     internal val publishedDate: Long,
     internal val imageUrl : String? = null,
     internal val author : String,

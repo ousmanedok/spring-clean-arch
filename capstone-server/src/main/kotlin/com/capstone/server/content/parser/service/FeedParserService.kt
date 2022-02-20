@@ -5,10 +5,13 @@ import com.capstone.server.content.parser.rome.FeedParser
 import org.springframework.stereotype.Service
 
 interface FeedService {
- // TODO
+ fun parser(feedUrl: String): MutableList<Article>
 }
 
 @Service("feedService")
 internal class FeedServiceImpl(val feedParser: FeedParser) : FeedService {
-    //TODO
+ override fun parser(feedUrl: String): MutableList<Article> {
+  return feedParser(feedUrl)
+ }
+
 }
