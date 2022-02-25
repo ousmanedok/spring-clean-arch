@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
-import article from "./article";
-import apiError from "./apiError";
+import articleReducer from "./article";
+import apiErrorReducer from "./apiError";
+import userReducer     from "./user";
 export default combineReducers({
-  article , apiError
+  articleReducer , apiErrorReducer , userReducer
 });

@@ -3,7 +3,6 @@ import { Text, View } from 'react-native';
 
 const ApiError = (props) =>{
     return(
-
         <View>
             {
                 props.message && (
@@ -11,8 +10,6 @@ const ApiError = (props) =>{
                 )
             }
         </View>
-        );
-        
+        );       
 }
-
 export default ApiError;
