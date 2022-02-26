@@ -63,8 +63,13 @@ internal class FeedParserImpl : FeedParser {
     }
 
     override fun invoke(feedItems: List<RssFeedItem>): MutableList<Article> {
-        TODO("Not yet implemented")
-
+        val listArticles: MutableList<Article> = ArrayList()
+        var feedUrl: String
+        for (feedItem in feedItems) {
+            feedUrl = feedItem.links.rssFeedLink
+            listArticles += invoke(feedUrl)
+        }
+        return listArticles
     }
 
 }
