@@ -10,7 +10,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
 
 const App = () => {
-  const message = useSelector(state => state?.apiError?.message);
   return (
           <NavigationContainer>
               <Stack.Navigator>
