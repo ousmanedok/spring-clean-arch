@@ -14,3 +14,15 @@ logging:
       springframework: INFO
       hibernate:
         SQL: DEBUG'
+
+fixedRate:
+  value: 2000
+
+initialDelay:
+  value: 10000
+
+cron:
+  expression:
+    value: 0 0 * ? * *
+
+timezone: UTC
