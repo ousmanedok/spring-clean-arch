@@ -11,7 +11,7 @@ interface FeedService {
 }
 
 @Service("feedService")
-internal class FeedServiceImpl(val feedParser: FeedParser) : FeedService {
+internal class FeedServiceImpl(val feedParser: FeedParser ) : FeedService {
  override fun parseItem(feedUrl: String): MutableList<Article> {
   return feedParser(feedUrl)
  }
@@ -19,5 +19,6 @@ internal class FeedServiceImpl(val feedParser: FeedParser) : FeedService {
  override fun parseItems(feedItems: List<RssFeedItem>): MutableList<Article> {
   return feedParser(feedItems)
  }
+
 
 }

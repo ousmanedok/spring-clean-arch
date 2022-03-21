@@ -10,4 +10,3 @@ data class Links(
         val siteLink : String,
         val rssFeedLink : String,
 )
-
