@@ -1,5 +1,7 @@
 package com.capstone.server.content.parser.config
 
+import com.capstone.server.content.domain.models.Article
+import com.capstone.server.content.parser.service.FeedService
 import org.slf4j.LoggerFactory
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty
 import org.springframework.context.annotation.Configuration
@@ -15,7 +17,7 @@ import java.time.LocalTime
 @EnableScheduling
 @EnableAsync
 @ConditionalOnProperty(name= ["scheduler.enabled"], matchIfMissing = true)
-class ScheduleConfig() {
+class ScheduleConfig(val feedService: FeedService) {
     private val log = LoggerFactory.getLogger(ScheduleConfig::class.java)
 
     @Scheduled(fixedRateString = "\${fixedRate.value}", initialDelayString = "\${initialDelay.value}" )
@@ -25,7 +27,8 @@ class ScheduleConfig() {
 
     @Async
     @Scheduled(cron = "\${cron.expression.value}", zone = "\${timezone}")
-    fun scheduleCronJob() {
-        log.debug("Task with Cron Expression, " + LocalTime.now().minute)
+    fun schedulerCronJobToSaveArticles() {
+        feedService.saveArticles("rssfeedlist.json")
+        log.debug("Articles are saved successfull into data base")
     }
 }

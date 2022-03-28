@@ -23,6 +23,6 @@ initialDelay:
 
 cron:
   expression:
-    value: 0 0 * ? * *
+    value: 0 */5 * ? * *
 
 timezone: UTC
